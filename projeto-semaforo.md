@@ -9,6 +9,7 @@ data: 05/02/2026
    <img width="1317" height="541" alt="Captura de tela 2026-03-26 194252" src="https://github.com/user-attachments/assets/0a1783e3-dd0a-45ac-9be0-5fb832f7bd19" />
 
    1.2. código:
+   
 int green_LED = 8;
 int yellow_LED = 9;
 int red_LED = 10;
