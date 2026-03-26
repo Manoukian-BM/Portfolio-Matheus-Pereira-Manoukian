@@ -1,6 +1,7 @@
 # Portfolio-Matheus-Pereira-Manoukian
 
 Projeto: semáforo
+
 data: 05/02/2026
 
 1. Tinkercad:
@@ -11,50 +12,82 @@ data: 05/02/2026
    1.2. código:
    
 int green_LED = 8;
+
 int yellow_LED = 9;
+
 int red_LED = 10;
 
 int green_LED2 = 5;
+
 int yellow_LED2 = 6;
+
 int red_LED2 = 7;
 
+
 void setup()	{
+
   pinMode(green_LED, OUTPUT);
+  
   pinMode(yellow_LED,OUTPUT);
+  
   pinMode(red_LED, OUTPUT);
   
+  
   pinMode(green_LED2, OUTPUT);
+  
   pinMode(yellow_LED2,OUTPUT);
+  
   pinMode(red_LED2, OUTPUT);
+  
 }
 
+
 void loop()	{
+
   
   digitalWrite(red_LED, LOW);
+  
   digitalWrite(yellow_LED, HIGH);
+  
   digitalWrite(green_LED, LOW);
   
+  
   digitalWrite(red_LED2, LOW);
+  
   digitalWrite(yellow_LED2, HIGH);
+  
   digitalWrite(green_LED2, LOW);
   
+  
   delay(2000);
+  
   
   digitalWrite(yellow_LED, LOW);
+  
   digitalWrite(red_LED, HIGH); 
   
+  
   digitalWrite(yellow_LED2, LOW);
+  
   digitalWrite(green_LED2, HIGH);
   
+  
   delay(2000);
+  
   
   digitalWrite(green_LED, HIGH);
+  
   digitalWrite(red_LED, LOW);
   
+  
   digitalWrite(green_LED2, LOW);
+  
   digitalWrite(red_LED2, HIGH);
+  
   delay(2000);
+  
 }
+
 
 2. projeto prática:
 
