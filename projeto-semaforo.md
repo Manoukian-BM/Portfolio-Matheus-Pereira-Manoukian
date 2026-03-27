@@ -2,7 +2,7 @@
 
 Projeto: semáforo
 
-data: 05/02/2026
+data: 23/01/2026
 
 1. Tinkercad:
 
