@@ -85,7 +85,7 @@ void loop() {
 
    <img width="469" height="402" alt="image" src="https://github.com/user-attachments/assets/4f15e295-0aa9-49f8-98b5-b34ac429feaf" />
 
-   a atiidade consistia na simulação de uma cancela que abre ao ver um veículo se aproximar.
+   a atividade consistia na simulação de uma cancela que abre ao ver um veículo se aproximar.
 
 4. desafios:
 
