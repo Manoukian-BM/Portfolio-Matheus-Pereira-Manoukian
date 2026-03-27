@@ -76,6 +76,8 @@ void loop() {
 
    <img width="960" height="1080" alt="image" src="https://github.com/user-attachments/assets/23b6c8f5-f06c-40b6-bfda-3764dd660f0e" />
 
+   projeto consistia no uso de laços de repetição com a condição dp uso de botões.
+
 4. Dificuldades:
   confusão usando função "for" e ao utilizar FSM em cpp
 
