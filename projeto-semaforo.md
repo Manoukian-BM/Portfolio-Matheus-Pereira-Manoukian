@@ -60,7 +60,6 @@ void loop()	{
 
    <img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/af178af7-c50c-4fd6-9bf1-823a980e35ef" />
 
-3. Sobre o projeto:
    O projeto consistia na montagem de um sistema semelhante a um semáforo, que liga as cores verde, amarelo e vermelho, respectivamente, em ordens opostas após determinado tempo
 
 3. Dificuldades:
