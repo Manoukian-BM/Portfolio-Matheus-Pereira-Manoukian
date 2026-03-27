@@ -11,6 +11,8 @@ data: 23/01/2026
 
    1.2. código:
 ```
+
+//ints dos pinos
 int green_LED = 8;
 int yellow_LED = 9;
 int red_LED = 10;
@@ -20,6 +22,7 @@ int red_LED2 = 7;
 
 void setup()	{
 
+//configurando pinos
   pinMode(green_LED, OUTPUT);  
   pinMode(yellow_LED,OUTPUT);  
   pinMode(red_LED, OUTPUT);  
@@ -30,7 +33,8 @@ void setup()	{
 
 
 void loop()	{
-  
+
+//ligando e desligando semaforo no lop()
   digitalWrite(red_LED, LOW);  
   digitalWrite(yellow_LED, HIGH);  
   digitalWrite(green_LED, LOW);  
