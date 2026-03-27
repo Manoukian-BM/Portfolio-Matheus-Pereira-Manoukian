@@ -12,30 +12,39 @@ data: 26/01/2026
 // projeto estruturas de repetição
 // Autor: Matheus Pereira Manoukian
 
+//definicao de pinos
 #define LED 10
 #define BUTTON1 8
 #define BUTTON2 6
 #define BUTTON3 4
 #define BUTTONW 2
 
+// estados da FSM
 enum Estado { For, While, Do_while, Nenhum };
 Estado state = Nenhum; 
 
 void setup() {
+
+//modo dos pinos
   pinMode(LED, OUTPUT);
   pinMode(BUTTON1, INPUT);
   pinMode(BUTTON2, INPUT);
   pinMode(BUTTON3, INPUT);
   pinMode(BUTTONW, INPUT);
+
+//comunicacao serial
   Serial.begin(9600);
   delay(250);
 }
 
 void loop() {
-  
+
+//estado for
   if (state == For) {
+//monitor serial
        Serial.println("Entrando no FOR");
        for (int i = 0; i < 5; i++) {
+//leds durante o for
            digitalWrite(LED, HIGH);
            delay(500);
            digitalWrite(LED, LOW);
@@ -44,19 +53,29 @@ void loop() {
            Serial.println(i);
        }
        state = Nenhum; 
-       
+
+//estado while
   } else if (state == While) {
+//monitor serial
        Serial.println("Entrando no WHILE");
-       while (digitalRead(BUTTONW) == LOW) { 
+       while (digitalRead(BUTTONW) == LOW) {
+//leds durante o while
            digitalWrite(LED, HIGH);
            delay(500);
            digitalWrite(LED, LOW);
            delay(500);
        }
        state = Nenhum;
-       
+
+
   } else if (state == Do_while) {
        Serial.println("Entrando no DO WHILE");
+       do {
+         digitalWrite(LED, HIGH);
+         delay(500);
+         digitalWrite(LED, LOW);
+         delay(500);
+        } while (digitalRead(BUTTONW) == LOW);
        state = Nenhum;
        
   } else {
