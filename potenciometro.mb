@@ -1,0 +1,65 @@
+Projeto: situação problema com potenciometro
+
+1. Tinkercad: 
+
+2. Código:
+```
+#define potentiometer A0
+#define LEDg 10
+#define LEDy 9
+#define LEDr 8
+int potLeitura;
+float tensao;
+double temp;
+void setup() {
+  pinMode(LEDg, OUTPUT);
+  pinMode(LEDy, OUTPUT);
+  pinMode(LEDr, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  potLeitura = analogRead(potentiometer);
+  temp = (potLeitura/1023.0) * 100;
+  
+  if (temp < 33) {
+    Serial.print("temperatura estavel");
+    Serial.print(" || ");
+    Serial.print("temperatura: ");
+    Serial.println(temp);
+    
+    digitalWrite(LEDg, HIGH);
+    digitalWrite(LEDy, LOW);
+    digitalWrite(LEDr, LOW);
+  } else if (temp >= 33 && temp <= 66) {
+    Serial.print("alerta de temperatura");
+    Serial.print(" || ");
+    Serial.print("temperatura: ");
+    Serial.println(temp);
+    
+    digitalWrite(LEDg, LOW);
+    digitalWrite(LEDy, HIGH);
+    digitalWrite(LEDr, LOW);
+  } else {
+    Serial.print("temperatura critica");
+    Serial.print(" || ");
+    Serial.print("temperatura: ");
+    Serial.println(temp);
+    
+    digitalWrite(LEDg, LOW);
+    digitalWrite(LEDy, LOW);
+    digitalWrite(LEDr, HIGH);
+  }
+  delay(100);
+}
+```
+
+3. Prática:
+ *realizada durante o período de treino da robótica*
+ a atividae consistia no uso de um potenciometro em dada situação problema
+
+4. Desafios: 
+  O principal desafio foi a leitura do potenciometro que pode ficar ao contrario se a conexão estiver errada
+
+5. Aprendizados:
+  O trabalho desenvolveu o uso do potncioometro e sua conexão elétrica.
